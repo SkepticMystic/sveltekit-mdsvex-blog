@@ -2,4 +2,19 @@
   import "../app.css";
 </script>
 
-<slot />
+<div class="px-[8%] max-w-7xl mx-auto">
+  <nav class="navbar">
+    <ul class="flex gap-4">
+      <li>
+        <a href="/" class="link link-primary link-hover">Home</a>
+      </li>
+      <li>
+        <a href="/blog" class="link link-primary link-hover">Blog</a>
+      </li>
+    </ul>
+  </nav>
+
+  <main>
+    <slot />
+  </main>
+</div>
